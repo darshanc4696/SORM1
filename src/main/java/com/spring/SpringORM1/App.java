@@ -13,7 +13,21 @@ public class App {
 	  EmployeeDaoImpl edaoi = (EmployeeDaoImpl)cx.getBean("employeeDaoImpl");
 	  Employee emp = (Employee)cx.getBean("employee");
 	  
-	  edaoi.insertEmployee(emp);
+//	  edaoi.insertEmployee(emp);
+	  
+//	 ArrayList<Employee> employees = edaoi.fetchAllEmployees();
+//	 
+//	 for(Employee employee : employees)
+//	 {
+//		 System.out.println(employee);
+//	 }
+	  
+//	  System.out.println(edaoi.fetchSpecificEmployee(1));
+	  
+//	  edaoi.updateEmployee(emp);
+	  
+	  edaoi.deleteEmployee(8);
+	  
 	  cx.close();
     
   }
